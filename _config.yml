@@ -5,7 +5,7 @@
 # Site
 title: Ishio
 subtitle: ''
-description: 'Just Enjoy!!!'
+description: 'Just for fun!'
 keywords:
 author: ishio
 language: en
@@ -53,6 +53,8 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+  exclude_languages:
+    - mermaid
 prismjs:
   preprocess: true
   line_number: true
@@ -119,3 +121,15 @@ search:
   field: post
   content: true
   format: html
+
+related_posts:
+  enable: true
+  filter_threshold: 0.05
+  related_count: 4
+  weight:
+    title: 0.2
+    description: 0.1
+    keywords: 0.05
+    tags: 0.1
+    categories: 0.05
+    text: 1

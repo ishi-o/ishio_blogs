@@ -1,13 +1,12 @@
 ---
-title: 怎么编写Markdown
+title: 如何用Markdown编写笔记
 date: 2023-10-3
 categories: [tools, notes]
-tags: [tools, markdown]
+tags: [language, markdown, note, beginner]
 mathjax: true
 ---
 <!-- placeholder -->
 <!-- more -->
-
 <a id="HOME"></a>
 
 # `Markdown`
