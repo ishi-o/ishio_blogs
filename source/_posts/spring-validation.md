@@ -2,7 +2,7 @@
 title: "Spring framework: Validation API"
 date: 2025-07-14
 categories: [Programming, Java, Spring framework]
-tags: [Spring, Java, validate]
+tags: [Spring, Java, validation]
 ---
 <!-- placeholder -->
 <!-- more -->
