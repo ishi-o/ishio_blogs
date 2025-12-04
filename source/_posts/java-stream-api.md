@@ -1,8 +1,8 @@
 ---
 title: "Java: 函数式编程"
 date: 2025-05-04
-categories: [programing, java, java se]
-tags: [java se, FP]
+categories: [Programming, Java, Java SE]
+tags: [Java, FP]
 ---
 <!-- placeholder -->
 <!-- more -->

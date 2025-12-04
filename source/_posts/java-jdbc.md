@@ -1,8 +1,8 @@
 ---
 title: "Java: JDBC编程"
 date: 2025-06-02
-categories: [programing, java, java se]
-tags: [java se, JDBC]
+categories: [Programming, Java, Java SE]
+tags: [Java, JDBC]
 ---
 <!-- placeholder -->
 <!-- more -->

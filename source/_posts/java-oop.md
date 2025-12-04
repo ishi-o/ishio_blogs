@@ -1,8 +1,8 @@
 ---
 title: "Java: 面向对象编程"
 date: 2025-03-06
-categories: [programing, java, java se]
-tags: [java se, OOP]
+categories: [Programming, Java, Java SE]
+tags: [Java, OOP]
 ---
 <!-- placeholder -->
 <!-- more -->

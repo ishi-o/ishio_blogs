@@ -15,10 +15,8 @@ tags: [beginner, linux, wsl]
 - 但`WSL`有它独有的优势，它的速度更快、配置更简单，且启动极快
 - 实现原理：
   - `wsl`本身不带`Linux`内核，仅仅是作为表示层/翻译层，将`Linux`命令翻译成`Windows`兼容的内核命令
-
     性能极高(因为只进行翻译)，但仅兼容`ELF`可执行文件，不支持`Docker`等
   - `wsl2`具有完整内核，是通过`Hyper-V`实现的轻量级虚拟机，同样与`Windows`深度集成，在`Linux`内部使用虚拟硬盘性能较高，但访问`Windows`文件系统(`/mnt/`)时性能较低
-
     兼容所有的`Linux`软件
   - `VMWare`等重量级虚拟机软件：完全模拟计算机硬件，需要完整启动`BIOS`、完整的上下文切换和硬件模拟，因此性能低，但在网络配置上自由度高
 
@@ -44,7 +42,6 @@ tags: [beginner, linux, wsl]
   ```
 
   然后安装`WSL2 Linux kernel update package for x64 machines`
-
   最后在`powershell`执行启用`wsl2`
 
   ```shell
@@ -52,7 +49,6 @@ tags: [beginner, linux, wsl]
   ```
 
 - 安装`Linux`发行版：在`Microsoft Store`中搜索即可
-
   或通过命令行安装：
 
   ```shell

@@ -1,8 +1,8 @@
 ---
 title: "Java: 异常处理"
 date: 2025-04-04
-categories: [programing, java, java se]
-tags: [exception, java se]
+categories: [Programming, Java, Java SE]
+tags: [exception, Java]
 ---
 <!-- placeholder -->
 <!-- more -->

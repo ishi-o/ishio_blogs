@@ -1,8 +1,8 @@
 ---
 title: "Java: 基本语法"
 date: 2025-03-04
-categories: [programing, java, java se]
-tags: [beginner, java se]
+categories: [Programming, Java, Java SE]
+tags: [beginner, Java]
 ---
 <!-- placeholder -->
 <!-- more -->

@@ -1,8 +1,8 @@
 ---
 title: "Java: 泛型编程"
 date: 2025-03-18
-categories: [programing, java, java se]
-tags: [java se, generics]
+categories: [Programming, Java, Java SE]
+tags: [Java, generics]
 ---
 <!-- placeholder -->
 <!-- more -->

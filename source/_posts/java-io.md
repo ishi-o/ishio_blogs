@@ -1,8 +1,8 @@
 ---
 title: "Java: IO"
 date: 2025-04-17
-categories: [programing, java, java se]
-tags: [java se, I/O API]
+categories: [Programming, Java, Java SE]
+tags: [Java, I/O API]
 ---
 <!-- placeholder -->
 <!-- more -->

@@ -1,8 +1,8 @@
 ---
 title: "Java: 数据结构与算法"
 date: 2025-04-10
-categories: [programing, java, java se]
-tags: [java se, algorithm, data structure]
+categories: [Programming, Java, Java SE]
+tags: [Java, algorithm, data structure]
 ---
 <!-- placeholder -->
 <!-- more -->
