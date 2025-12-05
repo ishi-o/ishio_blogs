@@ -1,8 +1,8 @@
 ---
 title: 如何用Markdown编写笔记
-date: 2023-10-3
-categories: [tools, notes]
-tags: [language, markdown, note, beginner]
+date: 2023-10-03
+categories: [Programming, Markup Languages]
+tags: [beginner]
 mathjax: true
 ---
 <!-- placeholder -->

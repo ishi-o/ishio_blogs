@@ -1,8 +1,8 @@
 ---
 title: "Linux: 高效地监控操作系统"
 date: 2025-01-11
-categories: [OS, Linux]
-tags: [Linux, system cmds]
+categories: [OS, Linux, Administrator cmds]
+tags: [Linux, command]
 ---
 <!-- placeholder -->
 <!-- more -->

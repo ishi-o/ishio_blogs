@@ -1,8 +1,8 @@
 ---
 title: "Linux: 内核"
 date: 2025-08-20
-categories: [OS, Linux]
-tags: [Linux, system cmds, kernel]
+categories: [OS, Linux, Kernel]
+tags: [Linux, kernel]
 ---
 <!-- placeholder -->
 <!-- more -->

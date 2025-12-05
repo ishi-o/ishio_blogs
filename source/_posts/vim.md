@@ -1,7 +1,7 @@
 ---
 title: Vim的基本使用
 date: 2024-09-07
-categories: [tools, editor, vim]
+categories: [Tools & Utilities, editor, vim]
 tags: [beginner, vim]
 ---
 <!-- placeholder -->

@@ -1,7 +1,7 @@
 ---
 title: 使用Git进行版本管理
 date: 2024-06-12
-categories: [tools, manager, version manager]
+categories: [Tools & Utilities, manager, version manager]
 tags: [beginner, git]
 ---
 <!-- placeholder -->

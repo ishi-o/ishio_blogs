@@ -1,7 +1,7 @@
 ---
 title: "Linux: 文件系统"
 date: 2024-03-12
-categories: [OS, Linux]
+categories: [OS, Linux, Administrator cmds]
 tags: [beginner, Linux, file system]
 ---
 <!-- placeholder -->

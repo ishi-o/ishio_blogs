@@ -1,7 +1,7 @@
 ---
 title: "WSL2: Windows下极其轻量的Linux虚拟机"
 date: 2025-05-19
-categories: [tools, virtual machine, wsl]
+categories: [Tools & Utilities, virtual machine, wsl]
 tags: [beginner, linux, wsl]
 ---
 <!-- placeholder -->
