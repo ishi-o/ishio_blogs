@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
+          submodules: recursive
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -23,9 +24,7 @@ jobs:
           node-version: '20'
 
       - name: Install Pandoc
-        run: |
-          sudo apt update
-          sudo apt install -y pandoc
+        run: sudo apt install -y pandoc
 
       - name: Prepare Hexo site directory
         run: |
@@ -33,10 +32,21 @@ jobs:
           cp -r ./* ./hexo-site/ || true
           sed -i "s|^url:.*|url: https://ishi-o.github.io|" hexo-site/_config.yml
 
+      - name: Cache Node.js dependencies
+        uses: actions/cache@v4
+        id: cache-deps
+        with:
+          path: ./hexo-site/node_modules
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('hexo-site/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-modules-
+
       - name: Install and Build Hexo
         working-directory: ./hexo-site
         run: |
-          npm install --legacy-peer-deps
+          if [ ! -d "node_modules" ] || [ "${{ steps.cache-deps.outputs.cache-hit }}" != 'true' ]; then
+            npm ci --legacy-peer-deps
+          fi
           npx hexo clean
           npx hexo generate
 
