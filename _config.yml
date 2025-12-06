@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Ishio
 subtitle: ''
-description: 'Just Enjoy!!!'
+description: 'Just for fun!'
 keywords:
 author: ishio
 language: en
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://101.201.83.237:4000
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -40,7 +40,10 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -50,6 +53,8 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+  exclude_languages:
+    - mermaid
 prismjs:
   preprocess: true
   line_number: true
@@ -110,3 +115,21 @@ symbols_count_time:
   time: true
   total_symbols: true
   total_time: true
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+related_posts:
+  enable: true
+  filter_threshold: 0.05
+  related_count: 4
+  weight:
+    title: 0.2
+    description: 0.1
+    keywords: 0.05
+    tags: 0.1
+    categories: 0.05
+    text: 1
