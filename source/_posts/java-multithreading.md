@@ -3,6 +3,7 @@ title: "Java: 多线程编程"
 date: 2025-05-17
 categories: [Programming, Java, Java SE]
 tags: [Java, multithreading]
+mathjax: true
 ---
 <!-- placeholder -->
 <!-- more -->

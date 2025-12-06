@@ -14,7 +14,7 @@ tags: [pyplot]
 
 生成一条直线的步骤如下，它的原理是将提供的数组中**各点连接**，所以提供的**数组越大，线越光滑**
 
-<p style="color: rgba(0, 0, 0, 0.2)" align="right">ishiooo</p>
+
 
 ```python
 import matplotlib.pyplot as plt  # 常用的是pyplot模块
@@ -32,7 +32,7 @@ plt.plot(x,y)    # 生成图,x轴数组为x,y轴数组为y
 plt.show()     # 将该图展现出来
 ```
 
-<img src="./pictures/plt_figure.png" style="zoom: 33%;" />
+<img src="./python-pyplot/plt_figure.png" style="zoom: 33%;" />
 
 如图，底栏所示功能编号1-7
 
@@ -49,7 +49,7 @@ plt.show()     # 将该图展现出来
 
 如果想在一个`figure`内画多条线，`plt.plot`还可以接受其他参数用于**区分两条线**
 
-<p style="color: rgba(0, 0, 0, 0.2)" align="right">ishiooo</p>
+
 
 ```python
 y = exp(x)
@@ -60,13 +60,13 @@ plt.plot(y,x,color='red',linestyle='--')# 默认蓝色,这里改为红色,虚线
 plt.plot(x,y,linestyle=(0,(1,2,3)))  # 元组定义线型
 ```
 
-<img src="./pictures/plt_expFigure.png" style="zoom:33%;" />
+<img src="./python-pyplot/plt_expFigure.png" style="zoom:33%;" />
 
 关于元组定义线型，`(num,(n1,n2,n3,...))`表示以后面元组的值**作为单位**画线
 例如`(0,(1,2,3))`指的是`(1磅实线,2磅空白,3磅实线)`，因为是**奇数**个，所以下一组变为`(1磅空白,2磅实线,3磅空白)`，所以一般来说，常用的是偶数个元素的元组
 关于`num`，它用于在**显示标签**时**偏移**的长度，例如：
 
-<img src="D:\桌面\Study\编程语言\Python\pictures\plt_linestyle.png" alt="plt_linestyle" style="zoom:50%;" />
+<img src="./python-pyplot/plt_linestyle.png" alt="plt_linestyle" style="zoom:50%;" />
 
 `color`参数可用简写如`'r'(红色),'g'(绿色)`，多条曲线不指定颜色时会**自动选择不同颜色**，其它颜色如下：
 
@@ -77,7 +77,7 @@ plt.plot(x,y,linestyle=(0,(1,2,3)))  # 元组定义线型
 - `'g'`：绿色
 - `'#000000'`：自定义`RGB`颜色字符串->[RGB颜色查询对照表](https://www.sojson.com/rgb.html)
 
-<p style="color: rgba(0, 0, 0, 0.2)" align="right">ishiooo</p>
+
 
 其它常用`linestyle`如下：
 
@@ -119,7 +119,7 @@ plt.plot(x,y,marker='*',mec='r',mfc='k') # mec设置点边框的颜色,mfc设置
 plt.plot(x,y,fmt='o:k')  # 实心圆(点),虚线(线),黑色(色)
 ```
 
-<p style="color: rgba(0, 0, 0, 0.2)" align="right">ishiooo</p>
+
 
 ## 自定义坐标轴
 
@@ -137,13 +137,13 @@ plt.xticks(np.linspace(0,1,5)) # 更改x轴的单位,默认每0.5为一个节点
 plt.xticks([0,1,5],['none','middle','pretty good'])
 ```
 
-<img src="./pictures/plt_xticks.png" style="zoom:33%;" />
+<img src="./python-pyplot/plt_xticks.png" style="zoom:33%;" />
 
 此外，后面数组还支持`Latex`语法，因为可能要用到转义字符等，所以这种情况需要在字符串前加上`'r'/'R'`，将它视为原始字符串`(raw string)`来解析，例如`plt.xticks([0,1,5],[r'$\theta$','$x$',r'$\Theta$'])`的效果为：
 
-<img src="./pictures/plt_Latex.png" style="zoom:25%;" />
+<img src="./python-pyplot/plt_Latex.png" style="zoom:25%;" />
 
-<p style="color: rgba(0, 0, 0, 0.2)" align="right">ishiooo</p>
+
 
 ### 移动坐标轴
 
@@ -163,7 +163,7 @@ for i in ['right','top']:
 ax.spines['left'].set_position(('data',0)) # 将y轴移动到x=0的位置
 ```
 
-<img src="./pictures/plt_spines.png" style="zoom:33%;" />
+<img src="./python-pyplot/plt_spines.png" style="zoom:33%;" />
 
 一般来说，将坐标轴交点设置在`(0,0)`处的方法如下
 
@@ -184,7 +184,7 @@ plt.grid(None,which='major',axis='both',...) # 其它参数和设置线型时类
 - `which`：显示主要/次要网格线，默认只显示主要，可改为`minor`或`both`
 - `axis`：显示某方向的网格线，默认为`both`，可改为`x`或`y`
 
-<p style="color: rgba(0, 0, 0, 0.2)" align="right">ishiooo</p>
+
 
 ## 绘制子图
 
@@ -232,7 +232,7 @@ ax.plot(x,y)
 
 这里的`ax`指的是`axes`，即画布中的一部分。这里因为只生成一张图，所以只有一个`axes`
 
-<p style="color: rgba(0, 0, 0, 0.2)" align="right">ishiooo</p>
+
 
 这种方法就不需要`plt.figure()`了，因为`subplots()`返回时就已创建一张画布了
 
@@ -279,9 +279,9 @@ axs[0,0]1.set_xlabel('labelName')    # 给x轴加标注
 
   其它可选调色盘：
 
-  <p style="color: rgba(0, 0, 0, 0.2)" align="right">ishiooo</p>
+
   
-  <img src="./pictures/plt_colorbar.png" style="zoom: 50%;" />
+  <img src="./python-pyplot/plt_colorbar.png" style="zoom: 50%;" />
   
 - `vmin,vmax`：调节颜色条的范围，大于`vmax`的数值将被强制映射到`vmax`上，`vmin`同理
 
@@ -305,7 +305,7 @@ axs[0,0]1.set_xlabel('labelName')    # 给x轴加标注
 - `color`：颜色，不能缩写为`c`，可接受颜色数组
 - `align`：对齐方式，默认`center`，即值的中间，可改为`edge`(左对齐)，如要实现右对齐，可以传递负数宽度值
 
-<p style="color: rgba(0, 0, 0, 0.2)" align="right">ishiooo</p>
+
 
 ### 饼图`(pie)`
 
@@ -340,7 +340,7 @@ axs[0,0]1.set_xlabel('labelName')    # 给x轴加标注
 
 在讲述`subplots`时，只是提到了一个简便的画图方法，如果需要更加精细地切分画布，这种规规整整的方式就不行了。于是我们需要用到网格：
 
-<p style="color: rgba(0, 0, 0, 0.2)" align="right">ishiooo</p>
+
 
 ```python
 plt.figure()
@@ -390,7 +390,7 @@ plt.rcParams["font.family"]="SimHei" # 将字体名称设置为"SimHei"(黑体)
 
 但是在正则表达式中似乎无效
 
-<p style="color: rgba(0, 0, 0, 0.2)" align="right">ishiooo</p>
+
 
 ### `tick_params()`
 
@@ -485,8 +485,8 @@ if __name__ == '__main__':
 
 `run`：
 
-<p style="color: rgba(0, 0, 0, 0.2)" align="right">ishiooo</p>
 
-<img src=".\pictures\plt_run.png" alt="plt_run" style="zoom:80%;" />
 
-<p style="color: rgba(0, 0, 0, 0.2)" align="right">ishiooo</p>
+<img src="plt_run.png" alt="plt_run" style="zoom:80%;" />
+
+

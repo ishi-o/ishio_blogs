@@ -3,6 +3,7 @@ title: "MATLAB: 基本语法"
 date: 2024-11-14
 categories: [Programming, MATLAB]
 tags: [beginner, MATLAB, math]
+mathjax: true
 ---
 <!-- placeholder -->
 <!-- more -->
@@ -90,8 +91,8 @@ tags: [beginner, MATLAB, math]
 - 仍用方括号创建矩阵，用空格或逗号区分列，用分号区分行，要求不同行向量的列数一致，矩阵为二维数组
 
   ```matlab
-  [1 2 3; 4 5 6]		1 2 3
-  					4 5 6
+  [1 2 3; 4 5 6]  1 2 3
+       4 5 6
   ```
 
 - 特殊矩阵创建：
@@ -114,7 +115,7 @@ tags: [beginner, MATLAB, math]
     - `数组(:,j)`：抽取第`j`列所有元素，抽取行向量同理
     - `数组(:)->`用**所有元素**构成一个列向量
   - `linspace(Begin, End, count=100)`：返回从`Begin`到`End`的具**有指定个数**的**等距行向量**
-  - 其它：<img src=".\matlab-beginner\1_space.png" alt="1_space" style="zoom:50%;" />
+  - 其它：<img src="1_space.png" alt="1_space" style="zoom:50%;" />
 - 矩阵的算术运算：
   - `transpose()`：返回转置后的数组
   - `inv()`：如果可逆，返回逆

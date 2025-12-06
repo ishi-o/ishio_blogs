@@ -1,5 +1,5 @@
 ---
-title: Vim的基本使用
+title: "Vim: 极其高效的编辑器"
 date: 2024-09-07
 categories: [Tools & Utilities, editor, vim]
 tags: [beginner, vim]

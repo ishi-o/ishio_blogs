@@ -3,6 +3,7 @@ title: "Pytorch: Tensor(张量)"
 date: 2025-01-15
 categories: [Programming, Python, Pytorch]
 tags: [pytorch, big data]
+mathjax: true
 ---
 <!-- placeholder -->
 <!-- more -->
@@ -36,7 +37,7 @@ tags: [pytorch, big data]
 
     可以用切片符获取`Size`元组的信息，和内置元组操作一致
     实例方法`size()`返回值和`shape`一致、`size(dim=num)`和`shape[num]`一致
-    <img src=".\pictures\torch_Tensor_size.png" alt="torch_Tensor_size" style="zoom:40%;" />
+    <img src="torch_Tensor_size.png" alt="torch_Tensor_size" style="zoom:40%;" />
     顺便提一下`ndim`属性，即维度大小
 
   - **`requires_grad`**：布尔值，标记这个张量是否需要梯度；要想让`torch`在反向传播中自动跟踪并计算梯度，就必须使`requires_grad=True`
@@ -63,7 +64,7 @@ tags: [pytorch, big data]
     开发者不需要过于关心`is_leaf`的值，但要知道，**只有`is_leaf=True`的张量的梯度会被保留**
     **`requires_grad`决定是否计算该张量的梯度、`is_leaf`决定一个张量的梯度是否释放**
     这是理所当然的，一般我们只需要权重、偏置张量的梯度，而不需要中间结点值的梯度
-    <img src=".\pictures\Tensor_is_leaf.png" alt="Tensor_is_leaf" style="zoom:50%;" />
+    <img src="Tensor_is_leaf.png" alt="Tensor_is_leaf" style="zoom:50%;" />
 
   - `grad_fn`：布尔值，标记创建该张量的函数对象，所有叶子张量的`grad_fn`均为`None`
     如果这个张量需要梯度，且由其它张量运算得出，则`grad_fn`指向这个运算函数
@@ -85,7 +86,7 @@ tags: [pytorch, big data]
   - 浅拷贝：使用工厂函数`torch.as_tensor(data)`
     默认情况下，对于除`np`数组、张量以外的对象，和`tensor()`一致，**对于`np`数组以及张量，通过浅拷贝返回张量(前者调用`from_numpy()`)**
     但用户可以指定`dtype、device`，如果指定的这两个属性和`np`数组、张量这些默认进行浅拷贝行为的数据不一致，则进行深拷贝而不是浅拷贝
-    <img src=".\pictures\Tensor_as_tensor.png" alt="Tensor_as_tensor" style="zoom:35%;" />
+    <img src="Tensor_as_tensor.png" alt="Tensor_as_tensor" style="zoom:35%;" />
 
   - 其它特殊的方式：
 

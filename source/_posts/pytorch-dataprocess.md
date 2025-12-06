@@ -36,7 +36,7 @@ tags: [big data]
   - **`shuffle`**：布尔值，决定**是否乱序采样**，和`sampler、batch_sampler`冲突(因为要使用默认的`RandomSampler`)，没有更高需求的采样行为而懒得自定义采样器时，使`shuffle=True`就足够了
 
   只提供`dataset`，其它参数保持默认下，迭代器会顺序地进行批量为一的自动批处理采样
-  <img src=".\pictures\DataLoader_init.png" alt="DataLoader_init" style="zoom:40%;" />
+  <img src="DataLoader_init.png" alt="DataLoader_init" style="zoom:40%;" />
   其它不常用的参数：
 
   - `num_workers`：将数据分给多个子进程加载，默认只用主进程加载

@@ -34,7 +34,8 @@ tags: [data structure]
 
     - 这个类属性**不允许包含其它类属性名**，否则会抛出`ValueError`
       配合上在用户**通过实例修改类属性**时，解释器优先解释为用户想要创建和类属性同名的实例属性这个特性，这种操作必然会报错，虽然原因不同：
-      <img src="D:\桌面\Study\语言\Python\MD\pictures\slots_1.png" style="zoom:40%;" /><img src="D:\桌面\Study\语言\Python\MD\pictures\slots_2.png" style="zoom:40%;" />
+      <img src="./python-data-structure\slots_1.png" style="zoom:40%;" />
+      <img src="./python-data-structure\slots_2.png" style="zoom:40%;" />
 
       (1)试图创建不在`__slots__`中的新的实例属性(2)试图通过实例修改类属性
       还是一句话，尽量不要通过实例访问类属性，如果手贱，尽量只进行只读操作
