@@ -2,7 +2,7 @@
 title: "Markdown: 简单易学的笔记语言"
 date: 2023-10-03
 categories: [Programming, Markup Languages]
-tags: [beginner]
+tags: [quick start]
 mathjax: true
 ---
 <!-- placeholder -->
@@ -63,7 +63,7 @@ mathjax: true
     ```
 
 - `'![]()'`：**图像记号**，与链接记号类似，但只能输入图片文件的路径，且会解析图片
-  例如：![](markdown-beginner/image_example.png (a))
+  例如：![](markdown-quick start/image_example.png (a))
   图像与链接一样，支持引用表示与悬停提示
 - `'[toc]'`：**目录记号**，可以用它生成自带锚点的目录，例如开头所示的索引
 - `'---'`：**分割线记号**，可以用它生成一条直线，例如：
@@ -99,7 +99,7 @@ mathjax: true
 ### 图片
 
 通过`<img />`标签可以定义并放缩图片：
-<img src="markdown-beginner/image_example.png" style="zoom:33%;" />
+<img src="markdown-quick start/image_example.png" style="zoom:33%;" />
 图片可以缩放，即在前方的`html`标签内加上`style="zoom:num%"`，`num`为缩放比例
 
 ### 链接

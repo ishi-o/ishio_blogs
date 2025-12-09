@@ -2,7 +2,7 @@
 title: "JavaScript: 基本使用"
 date: 2023-12-09
 categories: [Programming, JavaScript]
-tags: [beginner, JS]
+tags: [quick start, JS]
 ---
 <!-- placeholder -->
 <!-- more -->

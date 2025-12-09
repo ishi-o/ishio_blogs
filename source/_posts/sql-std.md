@@ -2,7 +2,7 @@
 title: "SQL: 基本用法"
 date: 2025-04-20
 categories: [Programming, SQL]
-tags: [beginner, SQL]
+tags: [quick start, SQL]
 ---
 <!-- placeholder -->
 <!-- more -->

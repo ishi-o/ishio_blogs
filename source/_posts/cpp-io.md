@@ -2,7 +2,7 @@
 title: "Cpp: I/O"
 date: 2024-01-19
 categories: [Programming, C/Cpp]
-tags: [beginner, I/O API]
+tags: [quick start, I/O API]
 ---
 <!-- placeholder -->
 <!-- more -->

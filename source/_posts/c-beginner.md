@@ -2,7 +2,7 @@
 title: "C: 基本语法"
 date: 2023-10-09
 categories: [Programming, C/Cpp]
-tags: [beginner]
+tags: [quick start]
 mathjax: true
 ---
 <!-- placeholder -->

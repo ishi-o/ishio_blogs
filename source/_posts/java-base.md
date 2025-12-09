@@ -2,7 +2,7 @@
 title: "Java: 基本语法"
 date: 2025-03-04
 categories: [Programming, Java, Java SE]
-tags: [beginner, Java]
+tags: [quick start, Java]
 ---
 <!-- placeholder -->
 <!-- more -->

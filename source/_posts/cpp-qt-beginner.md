@@ -2,7 +2,7 @@
 title: "Qt: 基本用法"
 date: 2024-06-27
 categories: [Programming, C/Cpp, Qt]
-tags: [beginner, Qt, GUI]
+tags: [quick start, Qt, GUI]
 ---
 <!-- placeholder -->
 <!-- more -->

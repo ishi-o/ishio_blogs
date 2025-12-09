@@ -1,7 +1,7 @@
 ---
 title: "算法竞赛: 动态规划引入"
 categories: [Algorithm, DP]
-tags: [algorithm, beginner, dp]
+tags: [algorithm, quick start, dp]
 mathjax: true
 date: 2024-03-11
 ---

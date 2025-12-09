@@ -2,7 +2,7 @@
 title: "机器学习: 基本概念"
 date: 2024-08-04
 categories: [ML/DL]
-tags: [beginner, ML, DL]
+tags: [quick start, ML, DL]
 mathjax: true
 ---
 <!-- placeholder -->

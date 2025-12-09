@@ -2,7 +2,7 @@
 title: "MATLAB: 基本语法"
 date: 2024-11-14
 categories: [Programming, MATLAB]
-tags: [beginner, MATLAB, math]
+tags: [quick start, MATLAB, math]
 mathjax: true
 ---
 <!-- placeholder -->

@@ -2,7 +2,7 @@
 title: "Rust: 基本语法"
 date: 2025-05-02
 categories: [Programming, Rust]
-tags: [beginner, Rust]
+tags: [quick start, Rust]
 ---
 <!-- placeholder -->
 <!-- more -->

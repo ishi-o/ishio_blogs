@@ -2,7 +2,7 @@
 title: "HTML: 基本语法"
 date: 2024-08-04
 categories: [Programming, Markup Languages]
-tags: [beginner, HTML]
+tags: [quick start, HTML]
 ---
 <!-- placeholder -->
 <!-- more -->
