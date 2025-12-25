@@ -3,7 +3,7 @@ title: 'Go: 切片(Slice)'
 categories:
   - Programming
   - Go
-  - Stdlib
+  - Spec & Stdlib
 tags:
   - Go
   - data structure

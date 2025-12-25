@@ -3,7 +3,7 @@ title: 'Go: 基本语法'
 categories:
   - Programming
   - Go
-  - Stdlib
+  - Spec & Stdlib
 tags:
   - Go
   - beginner

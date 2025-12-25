@@ -3,7 +3,7 @@ title: 'Go: map'
 categories:
   - Programming
   - Go
-  - Stdlib
+  - Spec & Stdlib
 tags:
   - Go
   - hash

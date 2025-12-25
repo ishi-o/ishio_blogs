@@ -3,7 +3,7 @@ title: 'Go: 组合式编程'
 categories:
   - Programming
   - Go
-  - Stdlib
+  - Spec & Stdlib
 tags:
   - Go
   - CP

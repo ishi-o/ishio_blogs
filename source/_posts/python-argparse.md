@@ -1,7 +1,7 @@
 ---
 title: "Python: 使用argparse开发CLI"
 date: 2025-01-20
-categories: [Programming, Python, Std library]
+categories: [Programming, Python, Spec & Stdlib]
 tags: [CLI]
 ---
 <!-- placeholder -->
