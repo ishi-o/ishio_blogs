@@ -106,8 +106,21 @@ date: 2025-12-24T18:13:16.000Z
 - `*Replacer`：提前指定替换规则后复用，通过`NewReplacer(oldnew ...string) *Replacer`创建
 
   ```go
-  import strings
-  rep := strings.NewReplacer(old1, new1, old2, new2)
+  import "strings"
+  var rep = strings.NewReplacer(old1, new1, old2, new2)
   str = rep.Replace(str)
   ```
+
+## `strconv`
+
+- `strconv`提供基本数据类型与字符串之间转换的工具函数
+- `Atoi(s string) (int, error)`：字符串转整型
+- `Itoa(x int) (string, error)`：整型转字符串
+- `ParseBool(string)`与`FormatBool(bool)`：布尔值转换
+- `ParseFloat(string, bitSize int)`：字符串转浮点型，`bitSize`为位数
+- `FormatFloat(float64, fmt byte, prec, bitSize int)`：字符串转浮点型，`bitSize`为位数
+  - `fmt`：格式化类型
+  - `prec`：精度
+  - `bitzise`：位数
+  <!-- TODO: Add fmt, prec definition -->
 
