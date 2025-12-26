@@ -88,3 +88,7 @@ date: 2025-12-24T18:09:34.000Z
 - 删除连续元素：`s = append(s[:start], s[end:]...)`
 - 插入指定元素：`s = append(s[:i], append([]T{v}, s[i:]...)...)`
 
+### `slices`
+
+- `Go 1.21`时推出了`slices`标准库，具有大量切片常用操作，且和[`strings`](/source/_posts/go-strings.md#strings)内的大部分操作相似，也包括排序函数和[迭代器函数](/source/_posts/go-iterator.md#slices)等
+
