@@ -1,5 +1,5 @@
 ---
-title: go-concurrent
+title: 'Go: 并发编程'
 categories:
   - Programming
   - Go
