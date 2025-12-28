@@ -51,7 +51,7 @@ date: 2025-12-27T14:58:39.000Z
     ```go
     func(http.ResponseWriter, *http.Request, Params)
 
-    func(*Context)
+    func(*gin.Context)
     ```
 
     将参数替换成了上下文
@@ -68,4 +68,30 @@ date: 2025-12-27T14:58:39.000Z
   - `*gin.Context.MustBindWith(any, binding.Binding)`：指定解析器，和`Bind()`一样会自动返回`400`错误
   - `BindJSON()/BindQuery()/BindYAML()/BindXML()`等：`MustBindWith()`的快捷函数
 - 对于`JSON`、`XML`、`ProtoBuf`等数据，`ShouldBind()`只能调用一次，需要使用`ShouldBindBodyWith()`方法
+
+## 分组路由
+
+- `Gin`提供`*gin.Engine.Group(relativePath string, handlers ...HandlerFunc) *RouterGroup`方法分组
+- `relativePath`的捕获语法与`httprouter`一致，相当于分组所表示的前缀
+
+  可以表示相对路径（即开头不带`/`），则相对于`Engine`等价于相对于根路径，相对于`RouterGroup`等价于相对于路由组的路径
+
+- `handlers`会在子路由处理器执行之前执行，它们不是`relativePath`对应的处理器，如果需要则应该在分组内绑定一个`""`路由
+- `*RouterGroup`的方法和`*Engine`注册路由类似，此外它本身也可以注册新的路由组
+- 为了规范，在注册路由组下的路由时，通常用`{}`括住：
+
+  ```go
+  g := e.Group("v1")
+  {
+   g.GET("/xxx", func(c *gin.Context) {
+   })
+  }
+  ```
+
+## 错误处理器
+
+- 针对`404`路由响应（没有对应的路由），可以自定义处理器：`*gin.Engine.NoRoute(HandlerFunc)`
+- 针对`405`路由响应（有对应的路由但是没有匹配的请求方法），可以使用`*gin.Engine.NoMethod(HandlerFunc)`
+- `gin`本身没有十分完整的捕获错误、统一处理，不像`spring-mvc`的`@ControllerAdvice`，但是可以通过中间件实现
+- 但是可以使用中间件，`gin`的中间件引入非常灵活，扩展性很高，完全可以实现类似统一错误处理器的效果
 

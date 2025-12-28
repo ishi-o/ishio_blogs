@@ -7,7 +7,7 @@ categories:
   - Gin
 tags:
   - Go
-  - net
+  - validation
   - webapp
 mathjax: false
 date: 2025-12-27T22:31:56.000Z
