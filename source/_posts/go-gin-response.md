@@ -1,5 +1,5 @@
 ---
-title: go-gin-response
+title: 'Gin: 响应处理'
 categories:
   - Programming
   - Go
