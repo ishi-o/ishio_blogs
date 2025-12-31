@@ -95,3 +95,128 @@ date: 2025-12-27T14:58:39.000Z
 - `gin`本身没有十分完整的捕获错误、统一处理，不像`spring-mvc`的`@ControllerAdvice`，但是可以通过中间件实现
 - 但是可以使用中间件，`gin`的中间件引入非常灵活，扩展性很高，完全可以实现类似统一错误处理器的效果
 
+## `CORS`中间件
+
+- 官方提供了`cors`的中间件[`github.com/gin-contrib/cors`](https://github.com/gin-contrib/cors)
+
+- ```go
+  cors.New(cors.Config{
+   type Config struct {
+    AllowAllOrigins bool
+
+    // AllowOrigins is a list of origins a cross-domain request can be executed from.
+    // If the special "*" value is present in the list, all origins will be allowed.
+    // Default value is []
+    AllowOrigins []string
+
+    // AllowOriginFunc is a custom function to validate the origin. It takes the origin
+    // as an argument and returns true if allowed or false otherwise. If this option is
+    // set, the content of AllowOrigins is ignored.
+    AllowOriginFunc func(origin string) bool
+
+    // Same as AllowOriginFunc except also receives the full request context.
+    // This function should use the context as a read only source and not
+    // have any side effects on the request, such as aborting or injecting
+    // values on the request.
+    AllowOriginWithContextFunc func(c *gin.Context, origin string) bool
+
+    // AllowMethods is a list of methods the client is allowed to use with
+    // cross-domain requests. Default value is simple methods (GET, POST, PUT, PATCH, DELETE, HEAD, and OPTIONS)
+    AllowMethods []string
+
+    // AllowPrivateNetwork indicates whether the response should include allow private network header
+    AllowPrivateNetwork bool
+
+    // AllowHeaders is list of non simple headers the client is allowed to use with
+    // cross-domain requests.
+    AllowHeaders []string
+
+    // AllowCredentials indicates whether the request can include user credentials like
+    // cookies, HTTP authentication or client side SSL certificates.
+    AllowCredentials bool
+
+    // ExposeHeaders indicates which headers are safe to expose to the API of a CORS
+    // API specification
+    ExposeHeaders []string
+
+    // MaxAge indicates how long (with second-precision) the results of a preflight request
+    // can be cached
+    MaxAge time.Duration
+
+    // Allows to add origins like http://some-domain/*, https://api.* or http://some.*.subdomain.com
+    AllowWildcard bool
+
+    // Allows usage of popular browser extensions schemas
+    AllowBrowserExtensions bool
+
+    // Allows to add custom schema like tauri://
+    CustomSchemas []string
+
+    // Allows usage of WebSocket protocol
+    AllowWebSockets bool
+
+    // Allows usage of file:// schema (dangerous!) use it only when you 100% sure it's needed
+    AllowFiles bool
+
+    // Allows to pass custom OPTIONS response status code for old browsers / clients
+    OptionsResponseStatusCode int
+   }
+  })
+  ```
+
+- 常用的配置项和一般的网页应用一样：
+
+  ```go
+  import "github.com/gin-contrib/cors"
+
+  func A() {
+  	cors.New(cors.Config{
+  		AllowOrigins: []string{"http://localhost:8000"},
+  		AllowMethods: []string{"*"},
+  		// 允许客户端发送的请求头
+  		AllowHeaders: []string{
+  			"Origin",
+  			"X-Requested-With",
+  			"Content-Type",
+  			"Accept",
+  			"Authorization",
+  		},
+  		// 允许客户端读取的响应头
+  		ExposeHeaders: []string{
+  			"Content-Length",
+  			"Access-Control-Allow-Origin",
+  			"Access-Control-Allow-Headers",
+  			"Cache-Control",
+  			"Content-Language",
+  			"Content-Type",
+  		},
+  		// 允许携带 cookie
+  		AllowCredentials: true,
+  	})
+  }
+  ```
+
+## 日志重定向
+
+- `gin`本身直接使用`Stdout`和`Stderr`，如果需要集成`zap`等，直接替换掉默认的日志记录器即可：
+
+  ```go
+  gin.DefaultWriter = sugar.Writer()
+  gin.DefaultErrorWriter = sugar.Writer()
+  ```
+
+- 如果不想使用`zap`的`sugar`，可以手动实现一个适配器
+
+  ```go
+  type zapWriter struct {
+   logger *zap.Logger
+  }
+
+  func (w *zapWriter) Write(p []byte) (n int, err error) {
+   w.logger.Info(string(p))
+   return len(p), nil
+  }
+
+  gin.DefaultWriter = &zapWriter{ logger:logger }
+  ```
+
