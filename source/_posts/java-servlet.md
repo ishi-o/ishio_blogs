@@ -1,11 +1,18 @@
 ---
-title: "Java EE: Servlet API"
-date: 2025-07-05
-categories: [Programming, Java, Java EE]
-tags: [Servlet, Java, webapp]
+title: 'Java EE: Servlet API'
+date: 2025-07-05T00:00:00.000Z
+categories:
+  - Programming
+  - Java
+  - Java EE
+tags:
+  - Servlet
+  - Java
+  - webapp
 ---
 <!-- placeholder -->
 <!-- more -->
+
 ## `javax.servlet`
 
 ### `Java EE`介绍
@@ -67,17 +74,16 @@ tags: [Servlet, Java, webapp]
   除非需要使用`HttpServlet`处理其它通信协议
 
 - `HttpServletRequest`接口表示一个`HTTP`请求报文，常用方法如下：
-
   - `setCharsetEncoding(String)`：设置解析的编码集
   - `String getParameter(String name)`：获取某个请求参数
 
     这里的参数已经消除了`GET`、`POST`等不同请求方法的差异，但对于`POST`方法而言，只会解析类型为`application/x-www-form-urlencoded`或`multipart/form-data`，其它类型如`application/json`需要通过输入流获取
+
   - `String getHeader(String name)`：获取某个请求头
   - `getRequestDispatcher(String location)`：获取一个请求分发器，指向内部的另一个`URI`，通常会继续调用`RequestDispatcher`接口的`forward(req, resp)`内部转发出去或`include(req, resp)`转发后回来
   - `getAttribute()`和`setAttribute()`：可以主动设置属性，方便请求处理链条中数据的传递
 
 - `HttpServletResponse`接口表示一个`HTTP`响应报文，常用方法如下：
-
   - `setCharsetEncoding(String)`：设置解析的编码集
   - `setContentType(String type)`：设置响应体的类型
   - `PrintWriter getWriter()`：获取绑定的字符输出流
@@ -96,11 +102,13 @@ tags: [Servlet, Java, webapp]
 - `HttpServletRequest`对象的`getSession()`方法会(若不存在)创建并返回一个`HttpSession`对象，(若存在)直接返回`HttpSession`对象
 
   `getSession(false)`则不会创建，而只是返回已有的对象，若无则返回`null`
+
 - `HttpSession`实例的常用方法为`setAttribute(String, Object)`和`Object getAttribute(Stirng)`以及`removeAttribute(String)`
 
   分别为设置、获取、删除其存储的对象数据
+
 - `Session`通常是通过`Cookie`技术实现的，它会让客户端在发送请求时同时发送一个`Session`
-  
+
   自定义`Cookie`需直接通过构造方法`new Cookie(String name, String value)`创建
 
   `Cookie`可设置最大时间`setMaxAge(seconds)`
@@ -133,6 +141,7 @@ tags: [Servlet, Java, webapp]
   `JSP`本质也是一个`Servlet`应用，由`Web`服务器在启动时自动将其编译成`Servlet`程序并在服务器上运行
 
   `JSP`作为静态资源可由`Web`容器自动部署，但也可以自定义部署`URL`路径
+
 - `JSP`语法：
   - `Jsp`脚本：`<% Java代码 %>`，只执行代码，没有返回值
   - `Jsp`表达式：`<%= Expr %>`，返回表达式的值
@@ -171,12 +180,15 @@ tags: [Servlet, Java, webapp]
   - `<jsp:useBean id="a" class="com.Clazz" scope="page|request|session|application"/>`
 
     创建一个标识为`a`、类型为`com.Clazz`、所属作用域为所有作用域的对象
+
   - `<jsp:getProperty name="a" property="age"/>`
 
     获取标识为`a`的对象的`age`属性
+
   - `<jsp:setProperty name="a" property="age" value="value"/>`
 
     设置标识为`a`的对象的`age`属性为字面量`"value"`
+
   - `<jsp:setProperty name="a" property="age" param="age"/>`
 
     设置标识为`a`的对象的`age`属性为引用变量`age`的值
@@ -190,3 +202,4 @@ tags: [Servlet, Java, webapp]
 
 - `Listener`采用观察者模式，当某种实例创建、更改、销毁时，自定义的`Listener`组件会随之调用对应的方法
 - `Listener`本身并不存在，只存在一系列的`XxxListener`接口
+

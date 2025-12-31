@@ -1,12 +1,18 @@
 ---
-title: "Java: 多线程编程"
-date: 2025-05-17
-categories: [Programming, Java, Java SE]
-tags: [Java, multithreading]
+title: 'Java: 多线程编程'
+date: 2025-05-17T00:00:00.000Z
+categories:
+  - Programming
+  - Java
+  - Java SE
+tags:
+  - Java
+  - concurrent
 mathjax: true
 ---
 <!-- placeholder -->
 <!-- more -->
+
 ## `Java`多线程编程
 
 ### `Runnable`接口
@@ -52,8 +58,8 @@ mathjax: true
   - 修饰实例方法时，等价于作用于`this`
   - 修饰静态方法时，等价于作用于所在类的`class`实例
   - 一般不用该关键字修饰方法，因为会导致加锁混乱、不明确且在很多情况会使两个本不冲突的方法变为冲突
-  使用`synchronized`的代码块无法并发执行，且加锁解锁有额外开销
-  对某对象加锁，不代表其它线程就无法访问该对象，如果一个线程对该对象加锁而另一个线程并不这样做，则仍存在线程同步问题
+    使用`synchronized`的代码块无法并发执行，且加锁解锁有额外开销
+    对某对象加锁，不代表其它线程就无法访问该对象，如果一个线程对该对象加锁而另一个线程并不这样做，则仍存在线程同步问题
 - `JVM`的基础原子操作：除`long`、`double`以外的任意变量的赋值操作
   涉及多行的赋值操作时，仍需要用`synchronized`修饰代码块
 - 可重入锁：`JVM`允许**同一个线程**重复获取同一个锁，其本质是一个信号量，进入/退出`synchronized`代码块使信号量加/减`1`
@@ -109,7 +115,7 @@ mathjax: true
   - `CAS`机制有时会配合自旋的机制：
     **自旋锁**优点在于可避免不必要的上下文切换开销，缺点在于循环导致的`CPU`忙等
     自旋锁仅在`CPU`**多核**的并行处理场景中，线程能在忙等中获取其它线程释放的资源时才有效
-  接下来从完全悲观到完全乐观地介绍`java.util.concurrent`提供的线程同步机制
+    接下来从完全悲观到完全乐观地介绍`java.util.concurrent`提供的线程同步机制
 - `Lock`接口：可以替代`synchronized`，是一种显式锁，由代码层面而非语法层面实现加锁和解锁，其实现类是对`synchronized`的封装
   `Lock`是悲观锁
   - `lock()`：显式加锁
@@ -117,7 +123,7 @@ mathjax: true
   - `tryLock()`和`tryLock(long, TimeUnit)`：`Lock`支持非阻塞获取锁或有限忙等地获取锁，前者仅尝试一次、后者在有限时间内循环尝试
     返回`true`表示获取成功
   - `newCondition()`：返回一个`Condition`对象，`Lock`支持多条件锁，与`synchronized`单锁相区别
-  `ReentrantLock`是`Lock`的实现类之一，译为“可重入锁”
+    `ReentrantLock`是`Lock`的实现类之一，译为“可重入锁”
   - 支持公平锁，在构造时传递`true`即可
     公平锁即每次向等待队列加入新的线程时，它无法插队，保证每次获取锁的线程是队列中等待时间最长的线程
 - `Condition`接口：表示某条件的等待队列，如上文传统的线程同步代码中，由于空/满这两种条件使不同类线程在同一等待队列中，因此会出现死锁现象而必须用`notifyAll()`来唤醒非同类线程
@@ -161,9 +167,9 @@ mathjax: true
 - `ReadWriteLock`接口：有时排它锁过于重量，在多读少写的场景下，希望允许多个线程同时读，这个接口就用于这种场景
   - `readLock()`：获取读锁
   - `writeLock()`：获取读锁
-  类的内部会维护，若有线程占有读锁，则不会有线程能占有写锁，反之亦然；若没有线程占有写锁，则允许多个线程占有读锁
-  虽然它实现了读写分离，但它仍是**悲观锁**，因此也可能导致需要**写锁的线程饥饿**
-  `ReentrantReadWriteLock`是`ReadWriteLock`的实现类之一，是可重入锁
+    类的内部会维护，若有线程占有读锁，则不会有线程能占有写锁，反之亦然；若没有线程占有写锁，则允许多个线程占有读锁
+    虽然它实现了读写分离，但它仍是**悲观锁**，因此也可能导致需要**写锁的线程饥饿**
+    `ReentrantReadWriteLock`是`ReadWriteLock`的实现类之一，是可重入锁
 - `AQS`框架：
 - `StampedLock`类：`Java 8`开始提供的**乐观读锁**和**读写分离的悲观锁**两者的封装锁，在互斥上可替代`ReadWriteLock`，但要注意它不是可重入锁、不支持公平锁
   - `StampedLock`和`ReadWriteLock`一样有`readLock()`和`writeLock()`方法，用于获取读锁和写锁
@@ -229,3 +235,4 @@ mathjax: true
 - `CompletableFuture`
 - `ThreadLocal`
 - 虚拟线程：
+

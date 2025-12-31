@@ -1,7 +1,7 @@
 ---
 title: "Python: 常用的数据结构"
 date: 2024-02-02
-categories: [Programming, Python, Std library]
+categories: [Programming, Python, Spec & Stdlib]
 tags: [data structure]
 ---
 <!-- placeholder -->
