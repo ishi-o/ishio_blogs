@@ -16,7 +16,7 @@ tags: [beginner, Linux, file system]
 
 默认情况下，`root`用户是锁定的，如果需要暂时使用`root`的权限：
 
-```shell
+```sh
 $ sudo cat /etc/sudoers  # 查看被允许使用sudo命令的用户,只有root权限可查看
 
 $ visudo     # 修改/etc/sudoers文件,只有root权限可修改
@@ -44,7 +44,7 @@ $ exit      # 退出当前用户
 
 它们都需要管理员权限，常用命令如下：
 
-```shell
+```sh
 $ sudo apt update    # 列出可更新软件名单
   sudo apt install <p1> <p2> # 安装p1,p2,...软件 若存在则尝试更新
   sudo apt upgrade    # 升级软件,应当定期执行该命令以保证系统稳定性
@@ -67,7 +67,7 @@ install options:
 
 关于文件的常用命令如下：
 
-```shell
+```sh
 $ touch <file>    # 若文件不存在,则创建它
 
 $ cat <file>    # 一次性展示文件内容
@@ -85,7 +85,7 @@ $ file <file>    # 查看文件类型,事实上也可查看目录,但现在发�
 
 关于目录的常用命令如下：
 
-```shell
+```sh
 $ cd <dir>     # 跳到指定路径下
 #[change directory]
 
@@ -109,7 +109,7 @@ $ rmdir <dir>    # 删除目录,不常用
 
 有些命令对文件与目录都有效：
 
-```shell
+```sh
 $ cp <file> <file>/<dir>
 #[copy]
 # 将前者复制到后者中,若为文件路径则以后者命名,若为目录路径则以前者命名
@@ -142,7 +142,7 @@ mv options:
 
 关于权限的常用命令如下：
 
-```shell
+```sh
 $ chmod <paras> <file>  # 改变文件模式
 #[change mode]
 chmod paras:
@@ -155,7 +155,7 @@ chmod paras:
 
 这种复杂灵活的机制让`Linux`在共享资源时保持有序、安全，关于组的常用命令如下：
 
-```shell
+```sh
 $ sudo groupadd    # 创建组,和addgroup差不多
 groupadd options:
   -g [id]     # 指定GID
@@ -181,7 +181,7 @@ $ chgrp <newGrp> <file/dir> # 改变文件/目录所属组
 
 关于用户的常用命令如下：
 
-```shell
+```sh
 $ cat /etc/passwd   # 查看所有用户的信息,它们储存在/etc/passwd中
 
 $ id      # 查看用户信息
@@ -214,7 +214,7 @@ $ chage      # 更改用户过期时间
 
 无论是在`/etc/group`还是在`/etc/passwd`，出于安全因素，里面的密码字段都是`'x'`，真正的密码储存在`/etc/shadow`内，只有`root`用户有权限查看与修改，更改密码的命令如下：
 
-```shell
+```sh
 $ passwd <user>    # 修改用户密码
 passwd options:
   -d      # 删除用户密码
@@ -242,7 +242,7 @@ gppasswd options:
 
 关于链接的常用命令如下：
 
-```shell
+```sh
 $ ln <file1> <file2>  # 给file1,file2创建硬链接;file1为源文件,必须存在
 ln options:
   -s      # 给file1,file2创建软链接;file1为源文件,必须存在
@@ -257,7 +257,7 @@ $ unlink <file>    # 删除链接,事实上多使用rm -i而非unlink
 
 如要删除链接目录，需要十分小心，假设我们有源目录`/tmp`和链接目录`/link->/tmp`：
 
-```shell
+```sh
 rm ~/link/    # 删除/tmp,即源目录的所有文件,链接目录本身会保留
 rm ~/link     # 这是正确方式,删除链接目录而非其中的文件
 ```

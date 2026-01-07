@@ -24,7 +24,7 @@ tags: [beginner, linux, wsl]
 
 - 安装`wsl`：一键式安装
 
-  ```shell
+  ```sh
   # 管理员powershell(会将wsl2作为默认版本)
   # 安装后需要重启电脑
   wsl --install
@@ -33,7 +33,7 @@ tags: [beginner, linux, wsl]
 
 - 安装`wsl`：手动配置
 
-  ```shell
+  ```sh
   # 管理员powershell
   # 启用wsl
   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
@@ -44,14 +44,14 @@ tags: [beginner, linux, wsl]
   然后安装`WSL2 Linux kernel update package for x64 machines`
   最后在`powershell`执行启用`wsl2`
 
-  ```shell
+  ```sh
   wsl --set-default-version 2
   ```
 
 - 安装`Linux`发行版：在`Microsoft Store`中搜索即可
   或通过命令行安装：
 
-  ```shell
+  ```sh
   # 查看Microsoft Store里的所有发行版
   wsl --list --online   # wsl -l -o
   # 安装对应发行版(实例名称为默认的发行版名称)
