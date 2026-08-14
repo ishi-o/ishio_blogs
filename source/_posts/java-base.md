@@ -59,7 +59,7 @@ tags: [beginner, Java]
 - `javac`用于编译`.java`文件，生成可被`JVM`执行的`.class`文件
 - 最常用的编译命令如下(多个文件使用`:`分隔，`Windows`下是`;`)：
 
-  ```shell
+  ```sh
   # -d(destination)参数表示保留文件的包路径信息，并生成到目标目录下
   javac -d 目标目录 待编译的.java文件
   ```
@@ -72,7 +72,7 @@ tags: [beginner, Java]
 - `java`用于运行`.class`文件
 - 最常用的命令如下：
 
-  ```shell
+  ```sh
   # -cp(classpath)参数标明`JVM`应从哪些路径下查找
   # 主类名必须包含`main`，链接由JVM在运行时进行，被链接的类同样是在指定的目录下查找
   # 注意主类名不是文件名，不能包含`.class`

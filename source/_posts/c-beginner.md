@@ -17,7 +17,7 @@ mathjax: true
 
 可以用`gcc`生成一个预处理后的文件(后缀为.i)
 
-```shell
+```sh
 # -E选项表示在预处理后停止，-C表示保留库函数里的注释，-o表示自定义输出文件的名称
 gcc -E -C file.c -o file.i
 ```
@@ -120,7 +120,7 @@ POWT2(5+4)==5+4*5+4==29;
 
 可以用`gcc`生成一个编译后的文件(后缀为.s)
 
-```shell
+```sh
 gcc -S file.i -o file.s
 ```
 
@@ -514,7 +514,7 @@ void (*pfunc)(int, int); // 声明函数指针
 
 可以用`gcc`生成一个汇编后的文件(后缀为.o)
 
-```shell
+```sh
 gcc -c file.s -o file.o
 ```
 
@@ -754,6 +754,6 @@ name DW 22h,11h   ;从左到右压入堆栈,即地址22h低于11h
 
 可以用`gcc`生成一个链接后的文件，已经到最后步骤了，需要做的事情很少
 
-```shell
+```sh
 gcc file.o -o file.out
 ```
