@@ -1,13 +1,8 @@
 ---
 title: 'Java: 多线程编程'
 date: 2025-05-17T00:00:00.000Z
-categories:
-  - Programming
-  - Java
-  - Java SE
-tags:
-  - Java
-  - concurrent
+categories: [Programming, Java, Java SE]
+tags: [Java, concurrent]
 mathjax: true
 ---
 <!-- placeholder -->

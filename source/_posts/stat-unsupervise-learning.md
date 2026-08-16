@@ -1,8 +1,8 @@
 ---
 title: "统计学习: 无监督学习"
 date: 2025-11-28
-categories: [SE Courses, stat]
-tags: [stat, ML]
+categories: [SE Courses, Statistics]
+tags: [stat, ML, unsupervised]
 mathjax: true
 ---
 <!-- placeholder -->

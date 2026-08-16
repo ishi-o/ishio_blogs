@@ -1,12 +1,7 @@
 ---
 title: 'Go: 迭代器'
-categories:
-  - Programming
-  - Go
-  - Spec & Stdlib
-tags:
-  - Go
-  - data structure
+categories: [Programming, Go, Spec & Stdlib]
+tags: [Go, data structure]
 mathjax: false
 date: 2025-12-25T11:37:27.000Z
 ---

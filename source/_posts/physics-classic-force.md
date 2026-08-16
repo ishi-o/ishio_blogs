@@ -2,7 +2,7 @@
 title: "大学物理: 经典力学"
 date: 2024-10-03
 categories: [SE Courses, Physics]
-tags: []
+tags: [physics]
 mathjax: true
 ---
 <!-- placeholder -->

@@ -1,14 +1,7 @@
 ---
 title: 'Gin: 路由'
-categories:
-  - Programming
-  - Go
-  - 3P Framework
-  - Gin
-tags:
-  - Go
-  - net
-  - webapp
+categories: [Programming, Go, 3P Framework, Gin]
+tags: [Go, net, webapp]
 mathjax: false
 date: 2025-12-27T14:58:39.000Z
 ---

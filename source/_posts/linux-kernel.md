@@ -1,7 +1,7 @@
 ---
 title: "Linux: 内核"
 date: 2025-08-20
-categories: [OS, Linux, Kernel]
+categories: [SE Courses, OS, Linux]
 tags: [Linux, kernel]
 ---
 <!-- placeholder -->

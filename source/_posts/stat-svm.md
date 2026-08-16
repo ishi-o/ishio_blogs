@@ -1,8 +1,8 @@
 ---
 title: "统计学习: SVM（支持向量机）"
 date: 2025-11-27
-categories: [SE Courses, stat]
-tags: [stat, ML]
+categories: [SE Courses, Statistics]
+tags: [stat, ML, svm]
 mathjax: true
 ---
 <!-- placeholder -->

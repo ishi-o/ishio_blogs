@@ -2,7 +2,7 @@
 title: "机器学习: 全连接层"
 date: 2025-07-15
 categories: [ML/DL]
-tags: [DL]
+tags: [DL, neural network]
 mathjax: true
 ---
 <!-- placeholder -->

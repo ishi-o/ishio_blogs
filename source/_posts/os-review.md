@@ -2,7 +2,7 @@
 title: "操作系统: 期末复习"
 date: 2025-06-11
 categories: [SE Courses, OS]
-tags: []
+tags: [OS, review]
 mathjax: true
 ---
 <!-- placeholder -->

@@ -1,14 +1,7 @@
 ---
 title: 'Gin: 响应处理'
-categories:
-  - Programming
-  - Go
-  - 3P Framework
-  - Gin
-tags:
-  - Go
-  - net
-  - webapp
+categories: [Programming, Go, 3P Framework, Gin]
+tags: [Go, net, webapp]
 mathjax: false
 date: 2025-12-28T14:03:18.000Z
 ---

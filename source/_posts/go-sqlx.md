@@ -1,14 +1,7 @@
 ---
 title: 'Go: sqlx'
-categories:
-  - Programming
-  - Go
-  - 3P Framework
-  - Database
-tags:
-  - Go
-  - SQL
-  - database
+categories: [Programming, Go, 3P Framework, Database]
+tags: [Go, SQL, database]
 mathjax: false
 date: 2025-12-31T14:22:06.000Z
 ---

@@ -1,8 +1,8 @@
 ---
 title: "统计学习: 树型模型"
 date: 2025-11-25
-categories: [SE Courses, stat]
-tags: [stat, ML]
+categories: [SE Courses, Statistics]
+tags: [stat, ML, tree]
 mathjax: true
 ---
 <!-- placeholder -->

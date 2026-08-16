@@ -1,8 +1,8 @@
 ---
 title: "统计学习: 变量选择"
 date: 2025-11-20
-categories: [SE Courses, stat]
-tags: [stat, Regularization]
+categories: [SE Courses, Statistics]
+tags: [stat, regularization]
 mathjax: true
 ---
 <!-- placeholder -->

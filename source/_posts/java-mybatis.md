@@ -1,7 +1,7 @@
 ---
 title: "Java: Mybatis"
 date: 2025-07-16
-categories: [Programming, Java, Common Tools]
+categories: [Programming, Java, 3P Framework]
 tags: [Java, ORM, beginner, Mybatis]
 ---
 <!-- placeholder -->

@@ -1,14 +1,7 @@
 ---
 title: "GitHub Actions: 工作流与 CI/CD"
-categories:
-  - Tools & Utilities
-  - CICD
-  - GitHub Actions
-tags:
-  - beginner
-  - github-actions
-  - workflow
-  - cicd
+categories: [Tools & Utilities, CI/CD]
+tags: [beginner, github-actions, workflow, cicd]
 mathjax: false
 date: 2026-08-14
 ---

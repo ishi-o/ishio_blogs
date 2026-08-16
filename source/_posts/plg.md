@@ -1,11 +1,8 @@
 ---
 title: "PLG: Prometheus + Loki + Grafana 可观测体系"
 date: 2026-08-16T00:00:00.000Z
-categories:
-  - Tools & Utilities
-  - Container
-tags:
-  - beginner
+categories: [Tools & Utilities, Observability]
+tags: [prometheus, loki, grafana, observability]
 mathjax: true
 ---
 
@@ -223,4 +220,4 @@ mathjax: true
   ```
 
 - 社区仪表盘(`grafana.com` 的 `gnetId`)可直接导入 `json` 后沉淀为 `ConfigMap`，再做定制
-- 这套"标签 + `sidecar`"的模式同样用于**告警规则**，见下一篇的告警实践
+- 这套"标签 + `sidecar`"的供给模式不仅用于仪表盘与数据源，同样适用于**告警规则**等其余 `Grafana` 资源

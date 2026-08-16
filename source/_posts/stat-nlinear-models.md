@@ -1,8 +1,8 @@
 ---
 title: "统计学习: 非线性模型"
 date: 2025-11-24
-categories: [SE Courses, stat]
-tags: [stat]
+categories: [SE Courses, Statistics]
+tags: [stat, ML]
 mathjax: true
 ---
 <!-- placeholder -->

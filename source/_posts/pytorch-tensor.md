@@ -2,7 +2,7 @@
 title: "Pytorch: Tensor(张量)"
 date: 2025-01-15
 categories: [Programming, Python, Pytorch]
-tags: [pytorch, big data]
+tags: [pytorch, tensor]
 mathjax: true
 ---
 <!-- placeholder -->

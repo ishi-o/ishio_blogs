@@ -1,13 +1,7 @@
 ---
 title: 'Go: 网络编程基础'
-categories:
-  - Programming
-  - Go
-  - Spec & Stdlib
-tags:
-  - Go
-  - net
-  - webapp
+categories: [Programming, Go, Spec & Stdlib]
+tags: [Go, net, webapp]
 mathjax: false
 date: 2025-12-25T11:39:18.000Z
 ---

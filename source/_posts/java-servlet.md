@@ -1,14 +1,8 @@
 ---
 title: 'Java EE: Servlet API'
 date: 2025-07-05T00:00:00.000Z
-categories:
-  - Programming
-  - Java
-  - Java EE
-tags:
-  - Servlet
-  - Java
-  - webapp
+categories: [Programming, Java, Java EE]
+tags: [Servlet, Java, webapp]
 ---
 <!-- placeholder -->
 <!-- more -->

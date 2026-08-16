@@ -1,10 +1,7 @@
 ---
 title: 'Docker-Compose: 容器部署'
-categories:
-  - Tools & Utilities
-  - 3P tools
-tags:
-  - docker
+categories: [Tools & Utilities, 3P Tools, Docker]
+tags: [docker, container, compose]
 mathjax: false
 date: 2025-06-17T16:36:12.000Z
 ---

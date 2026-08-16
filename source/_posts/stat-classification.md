@@ -1,8 +1,8 @@
 ---
 title: "统计学习: 分类任务"
 date: 2025-11-18
-categories: [SE Courses, stat]
-tags: [stat]
+categories: [SE Courses, Statistics]
+tags: [stat, classification]
 mathjax: true
 ---
 <!-- placeholder -->

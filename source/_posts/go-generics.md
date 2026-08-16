@@ -1,12 +1,7 @@
 ---
 title: 'Go: 泛型'
-categories:
-  - Programming
-  - Go
-  - Spec & Stdlib
-tags:
-  - Go
-  - generics
+categories: [Programming, Go, Spec & Stdlib]
+tags: [Go, generics]
 mathjax: false
 date: 2025-12-25T11:37:04.000Z
 ---

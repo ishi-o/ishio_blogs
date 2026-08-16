@@ -1,8 +1,8 @@
 ---
 title: "统计学习: 估计方法"
 date: 2025-11-20
-categories: [SE Courses, stat]
-tags: [stat]
+categories: [SE Courses, Statistics]
+tags: [stat, estimation]
 mathjax: true
 ---
 <!-- placeholder -->

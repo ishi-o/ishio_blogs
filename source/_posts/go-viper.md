@@ -1,14 +1,7 @@
 ---
 title: 'Go: Viper配置管理'
-categories:
-  - Programming
-  - Go
-  - 3P Framework
-  - Viper
-tags:
-  - Go
-  - config
-  - webapp
+categories: [Programming, Go, 3P Framework, Viper]
+tags: [Go, config, webapp]
 mathjax: false
 date: 2025-12-27T14:58:39.000Z
 ---

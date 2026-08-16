@@ -1,12 +1,7 @@
 ---
 title: 'Go: 错误处理'
-categories:
-  - Programming
-  - Go
-  - Spec & Stdlib
-tags:
-  - Go
-  - exception
+categories: [Programming, Go, Spec & Stdlib]
+tags: [Go, exception]
 mathjax: false
 date: 2025-12-25T11:37:12.000Z
 ---

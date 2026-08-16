@@ -1,11 +1,8 @@
 ---
 title: "PLG: 部署与飞书告警实践"
 date: 2026-08-16T00:00:00.000Z
-categories:
-  - Tools & Utilities
-  - Container
-tags:
-  - beginner
+categories: [Tools & Utilities, Observability]
+tags: [grafana, alerting, observability]
 mathjax: true
 ---
 
@@ -14,7 +11,7 @@ mathjax: true
 
 # `PLG`: 部署与飞书告警实践
 
-上一篇梳理了 `PLG` 各组件的基础配置，本篇记录如何把整套体系以 `git` + `helm` + `CI` 的方式部署进集群，并把告警送达飞书群，所有做法都是生产环境的通用玩法
+本篇记录如何把 `PLG` 监控体系以 `git` + `helm` + `CI` 的方式部署进集群，并把告警送达飞书群，所有做法都是生产环境的通用玩法
 
 ## 监控栈的 `CI` 部署
 
@@ -42,11 +39,11 @@ mathjax: true
       product:
         - name: monitoring
           namespace: monitoring
-          values: values-kingboat-aliyun.yaml
+          values: values-example-prod.yaml
       cluster:
-        - name: kingboat-aliyun
-          runner: kingboat-runner-mini # 自托管 runner，持有集群访问权
-          context: kingboat-aliyun
+        - name: example-prod
+          runner: example-runner # 自托管 runner，持有集群访问权
+          context: example-prod
   ```
 
 ### 密钥注入
@@ -62,7 +59,7 @@ mathjax: true
 
   ```bash
   envsubst '$FEISHU_APP_ID $FEISHU_APP_SECRET $BOT_GRAFANA_WEBHOOK_TOKEN' \
-    < charts/monitoring/values-kingboat-aliyun.yaml > $values_file
+    < charts/monitoring/values-example-prod.yaml > $values_file
   ```
 
 - 简单值直接用 `--set` 注入(如 `Cloudflare` `Token`)，不必经过 `values` 文件
@@ -148,7 +145,7 @@ mathjax: true
               model:
                 expr: |
                   sum by (namespace, pod, phase) (
-                    kube_pod_status_phase{namespace !~ 'staging|arc-.*', phase=~"Pending|Unknown|Failed"} == 1
+                    kube_pod_status_phase{namespace !~ 'staging|dev-.*', phase=~"Pending|Unknown|Failed"} == 1
                     and on (namespace, pod) ((time() - kube_pod_created) > 180)
                   )
             - refId: 不健康服务增多
@@ -221,7 +218,7 @@ mathjax: true
   apiVersion: 1
   templates:
     - orgId: 1
-      name: "kingboat.title"
+      name: "example.title"
       template: |
         {{- if len .Alerts.Firing -}}
           🚨🚨🚨 有 {{ len .Alerts.Firing }} 条告警规则正在触发
@@ -231,7 +228,7 @@ mathjax: true
           ✅✅✅ 有 {{ len .Alerts.Resolved }} 条告警规则已经恢复
         {{- end }}
     - orgId: 1
-      name: "kingboat.message"
+      name: "example.message"
       template: |
         - 产品名称: {{ .Labels.product }}
         - 产品应用: {{ or (or .Labels.application .Labels.pod) "没有数据" }}

@@ -2,7 +2,7 @@
 title: "大学物理: 恒定磁场"
 date: 2024-10-11
 categories: [SE Courses, Physics]
-tags: []
+tags: [physics]
 mathjax: true
 ---
 <!-- placeholder -->

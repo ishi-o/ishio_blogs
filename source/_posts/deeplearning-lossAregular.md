@@ -2,7 +2,7 @@
 title: "机器学习: 损失函数与正则化"
 date: 2025-07-06
 categories: [ML/DL]
-tags: [DL, ML, Regularization]
+tags: [DL, ML, regularization]
 mathjax: true
 ---
 <!-- placeholder -->
