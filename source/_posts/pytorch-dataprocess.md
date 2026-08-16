@@ -2,7 +2,7 @@
 title: "Pytorch: 使用torch.utils.data封装数据"
 date: 2025-11-26
 categories: [Programming, Python, Pytorch]
-tags: [big data]
+tags: [pytorch, data]
 ---
 <!-- placeholder -->
 <!-- more -->

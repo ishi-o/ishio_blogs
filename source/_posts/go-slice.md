@@ -1,12 +1,7 @@
 ---
 title: 'Go: 切片(Slice)'
-categories:
-  - Programming
-  - Go
-  - Spec & Stdlib
-tags:
-  - Go
-  - data structure
+categories: [Programming, Go, Spec & Stdlib]
+tags: [Go, data structure]
 mathjax: false
 date: 2025-12-24T18:09:34.000Z
 ---

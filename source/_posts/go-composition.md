@@ -1,12 +1,7 @@
 ---
 title: 'Go: 组合式编程'
-categories:
-  - Programming
-  - Go
-  - Spec & Stdlib
-tags:
-  - Go
-  - CP
+categories: [Programming, Go, Spec & Stdlib]
+tags: [Go, composition]
 mathjax: false
 date: 2025-12-24T13:50:12.000Z
 ---

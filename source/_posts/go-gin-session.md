@@ -1,16 +1,7 @@
 ---
 title: 'Gin: 会话管理'
-categories:
-  - Programming
-  - Go
-  - 3P Framework
-  - Gin
-tags:
-  - Go
-  - session
-  - webapp
-  - jwt
-  - cookie
+categories: [Programming, Go, 3P Framework, Gin]
+tags: [Go, session, webapp, jwt, cookie]
 mathjax: false
 date: 2025-12-30T15:20:05.000Z
 ---

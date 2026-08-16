@@ -1,11 +1,8 @@
 ---
 title: "Helm: Kubernetes 的包管理器"
 date: 2026-08-16T00:00:00.000Z
-categories:
-  - Tools & Utilities
-  - Container
-tags:
-  - beginner
+categories: [Tools & Utilities, Container, Helm]
+tags: [helm, kubernetes, package manager]
 mathjax: true
 ---
 

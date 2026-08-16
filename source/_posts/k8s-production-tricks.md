@@ -1,11 +1,8 @@
 ---
 title: "Kubernetes: 生产级配置技巧"
 date: 2026-08-16T00:00:00.000Z
-categories:
-  - Tools & Utilities
-  - Container
-tags:
-  - beginner
+categories: [Tools & Utilities, Container, Kubernetes]
+tags: [kubernetes, istio, production]
 mathjax: true
 ---
 
@@ -429,9 +426,9 @@ mathjax: true
 - 模板层以 `Release.Namespace` 推导默认值，用户不配置则自动隔离
 
   ```yaml
-  # 节点打污点: kubectl taint node node1 kingboat.io/environment=production:NoSchedule
+  # 节点打污点: kubectl taint node node1 example.io/environment=production:NoSchedule
   tolerations:
-    - key: kingboat.io/environment
+    - key: example.io/environment
       operator: Equal
       value: {{ .Release.Namespace | quote }} # 容忍度跟随命名空间，自动匹配环境节点
       effect: NoSchedule

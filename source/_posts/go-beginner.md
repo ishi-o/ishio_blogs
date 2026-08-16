@@ -1,12 +1,7 @@
 ---
 title: 'Go: 基本语法'
-categories:
-  - Programming
-  - Go
-  - Spec & Stdlib
-tags:
-  - Go
-  - beginner
+categories: [Programming, Go, Spec & Stdlib]
+tags: [Go, beginner]
 mathjax: false
 date: 2025-12-23T22:48:43.000Z
 ---

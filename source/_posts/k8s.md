@@ -1,11 +1,8 @@
 ---
 title: "Kubernetes: 生产级的分布式集群部署"
 date: 2026-04-20T00:00:00.000Z
-categories:
-  - Tools & Utilities
-  - Container
-tags:
-  - beginner
+categories: [Tools & Utilities, Container, Kubernetes]
+tags: [kubernetes, container, beginner]
 mathjax: true
 ---
 
@@ -997,7 +994,7 @@ allowedTopologies:
   - `NetworkPolicy` 默认拒绝出站，仅放行 `DNS`，并显式屏蔽云厂商 `metadata` 网段(`169.254.0.0/16`、`100.64.0.0/10`)，防止应用被 `SSRF` 后窃取云凭证
   - 数据库密钥、`Cloudflare` `Token` 等以 `Secret` 模板管理
 - **多云适配**：同一 `chart` 通过 `values` 切换对象存储挂载方案(`oss`/`gcs`/`cos`)与 `StorageClass`(按云厂商提供不同存储模板)
-- **环境隔离**：默认注入 `nodeSelector: kingboat.io/environment={{ .Release.Namespace }}` 与对应容忍度，让命名空间与节点环境一一对应，用户可整体覆盖
+- **环境隔离**：默认注入 `nodeSelector: example.io/environment={{ .Release.Namespace }}` 与对应容忍度，让命名空间与节点环境一一对应，用户可整体覆盖
 - **生命周期钩子**：`post-install`/`post-upgrade` `Job` 执行数据库迁移(`schema` 变更)等前置任务
 
 ### 沉淀的最佳实践

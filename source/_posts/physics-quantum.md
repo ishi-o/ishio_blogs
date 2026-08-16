@@ -2,7 +2,7 @@
 title: "大学物理: 量子力学"
 date: 2024-11-15
 categories: [SE Courses, Physics]
-tags: []
+tags: [physics]
 mathjax: true
 ---
 <!-- placeholder -->

@@ -1,8 +1,8 @@
 ---
 title: "统计学习: 线性回归"
 date: 2025-11-17
-categories: [SE Courses, stat]
-tags: [stat]
+categories: [SE Courses, Statistics]
+tags: [stat, regression]
 mathjax: true
 ---
 <!-- placeholder -->

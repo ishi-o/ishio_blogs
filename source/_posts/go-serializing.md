@@ -1,13 +1,7 @@
 ---
 title: 'Go: 序列化与反序列化'
-categories:
-  - Programming
-  - Go
-  - Spec & Stdlib
-tags:
-  - Go
-  - serializing
-  - config
+categories: [Programming, Go, Spec & Stdlib]
+tags: [Go, serializing, config]
 mathjax: false
 date: 2025-12-30T08:50:23.000Z
 ---

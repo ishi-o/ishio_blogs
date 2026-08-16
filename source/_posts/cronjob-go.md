@@ -1,13 +1,7 @@
 ---
 title: "Go: Cron Job"
-categories:
-  - Programming
-  - Go
-  - 3P Framework
-tags:
-  - Go
-  - k8s
-  - cron
+categories: [Programming, Go, 3P Framework]
+tags: [Go, k8s, cron]
 mathjax: false
 date: 2026-04-10T15:41:31.000Z
 ---

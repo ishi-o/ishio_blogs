@@ -2,7 +2,7 @@
 title: "Qt: 数据库连接"
 date: 2024-06-30
 categories: [Programming, C/Cpp, Qt]
-tags: [Qt, databse]
+tags: [Qt, database]
 ---
 <!-- placeholder -->
 <!-- more -->

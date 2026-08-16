@@ -1,14 +1,7 @@
 ---
 title: 'Gin: 中间件'
-categories:
-  - Programming
-  - Go
-  - 3P Framework
-  - Gin
-tags:
-  - Go
-  - middleware
-  - webapp
+categories: [Programming, Go, 3P Framework, Gin]
+tags: [Go, middleware, webapp]
 mathjax: false
 date: 2025-12-28T17:24:12.000Z
 ---

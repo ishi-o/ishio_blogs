@@ -1,7 +1,7 @@
 ---
 title: "树的算法: 点分治"
 categories: [Algorithm, Tree Algo]
-tags: [algorithm, tree, devide and conquer]
+tags: [algorithm, tree, divide and conquer]
 mathjax: true
 date: 2025-06-11
 ---

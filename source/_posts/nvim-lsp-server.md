@@ -1,7 +1,7 @@
 ---
 title: "实现一个最小可用的 LSP Server"
 date: 2026-08-15
-categories: [Tools & Utilities, editor, neovim]
+categories: [Tools & Utilities, Editor, Neovim]
 tags: [lsp, neovim, typescript, codex]
 ---
 

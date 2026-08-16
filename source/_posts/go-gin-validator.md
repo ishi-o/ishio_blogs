@@ -1,14 +1,7 @@
 ---
 title: 'Gin: 数据校验'
-categories:
-  - Programming
-  - Go
-  - 3P Framework
-  - Gin
-tags:
-  - Go
-  - validation
-  - webapp
+categories: [Programming, Go, 3P Framework, Gin]
+tags: [Go, validation, webapp]
 mathjax: false
 date: 2025-12-27T22:31:56.000Z
 ---

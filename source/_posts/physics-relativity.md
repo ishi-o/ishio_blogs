@@ -2,7 +2,7 @@
 title: "大学物理: 相对论"
 date: 2024-10-19
 categories: [SE Courses, Physics]
-tags: []
+tags: [physics]
 mathjax: true
 ---
 <!-- placeholder -->

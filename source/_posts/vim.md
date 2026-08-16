@@ -1,7 +1,7 @@
 ---
 title: "Vim: 极其高效的编辑器"
 date: 2024-09-07
-categories: [Tools & Utilities, editor, vim]
+categories: [Tools & Utilities, Editor, Vim]
 tags: [beginner, vim]
 ---
 <!-- placeholder -->

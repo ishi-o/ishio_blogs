@@ -1,12 +1,7 @@
 ---
 title: 'Go: 并发编程'
-categories:
-  - Programming
-  - Go
-  - Spec & Stdlib
-tags:
-  - Go
-  - concurrent
+categories: [Programming, Go, Spec & Stdlib]
+tags: [Go, concurrent]
 mathjax: false
 date: 2025-12-25T11:37:57.000Z
 ---

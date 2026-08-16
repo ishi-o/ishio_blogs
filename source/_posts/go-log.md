@@ -1,13 +1,7 @@
 ---
 title: 'Go: 日志管理'
-categories:
-  - Programming
-  - Go
-  - 3P Framework
-  - Zap
-tags:
-  - Go
-  - log
+categories: [Programming, Go, 3P Framework, Zap]
+tags: [Go, log]
 mathjax: false
 date: 2025-12-30T15:43:40.000Z
 ---

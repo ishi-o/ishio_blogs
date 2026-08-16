@@ -1,12 +1,7 @@
 ---
 title: 'Go: I/O'
-categories:
-  - Programming
-  - Go
-  - Spec & Stdlib
-tags:
-  - Go
-  - I/O API
+categories: [Programming, Go, Spec & Stdlib]
+tags: [Go, I/O API]
 mathjax: false
 date: 2025-12-25T11:37:22.000Z
 ---

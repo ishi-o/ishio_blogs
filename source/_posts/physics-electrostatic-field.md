@@ -2,7 +2,7 @@
 title: "大学物理: 静电场"
 date: 2024-10-06
 categories: [SE Courses, Physics]
-tags: []
+tags: [physics]
 mathjax: true
 ---
 <!-- placeholder -->

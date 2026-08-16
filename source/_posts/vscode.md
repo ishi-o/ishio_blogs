@@ -1,7 +1,7 @@
 ---
 title: "VS Code: 较为轻量的IDE"
 date: 2023-12-08
-categories: [Tools & Utilities, editor, vscode]
+categories: [Tools & Utilities, Editor, VS Code]
 tags: [beginner, vscode, plugins]
 ---
 <!-- placeholder -->
