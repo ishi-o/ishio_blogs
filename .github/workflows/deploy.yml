@@ -4,6 +4,14 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'source/**'
+      - 'scaffolds/**'
+      - 'themes/**'
+      - '_config*.yml'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/deploy.yml'
 
 jobs:
   build-and-deploy:
