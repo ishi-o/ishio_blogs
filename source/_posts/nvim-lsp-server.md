@@ -5,6 +5,7 @@ categories: [Tools & Utilities, editor, neovim]
 tags: [lsp, neovim, typescript, codex]
 ---
 
+<!-- placeholder -->
 <!-- more -->
 
 # 实现一个最小可用的 LSP Server
