@@ -1,7 +1,5 @@
 # ishio_blogs
 
-Hexo blog source, deployed to GitHub Pages by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). The workflow only triggers when site content or config changes (`source/`, `scaffolds/`, `themes/`, `_config*.yml`, `package*.json`).
-
 ## Run locally
 
 Only two things on your machine:
